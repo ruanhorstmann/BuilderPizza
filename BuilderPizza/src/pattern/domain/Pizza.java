@@ -6,12 +6,12 @@ public class Pizza {
 	private String tamanho;
 	private int quantidade;
 	private String sabor;
-	private boolean borda;
+	private String borda;
 	private Double valor;
 
 
 
-	public Pizza(String tamanho, int quantidade, Double valor, String sabor, boolean borda) {
+	public Pizza(String tamanho, int quantidade, Double valor, String sabor, String borda) {
 		super();
 		this.tamanho = tamanho;
 		this.quantidade = quantidade;
@@ -42,7 +42,7 @@ public class Pizza {
 	}
 
 	public void setValor(Double valor) {
-		if(tamanho == "p"){
+		if(tamanho == "p"|| tamanho == "P"){
 			this.valor = valor * 0.9;
 	   }
 	   else if (tamanho == "m" || tamanho == "M"){
@@ -53,11 +53,11 @@ public class Pizza {
 	   }
 
 	}
-	public boolean isBorda() {
+	public String isBorda() {
 		return borda;
 	}
 
-	public void setBorda(boolean borda) {
+	public void setBorda(String borda) {
 		this.borda = borda;
 	}
 

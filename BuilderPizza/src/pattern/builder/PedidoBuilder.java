@@ -1,6 +1,5 @@
 package pattern.builder;
 
-import java.math.BigDecimal;
 
 import pattern.domain.Cliente;
 import pattern.domain.Pedido;
@@ -24,8 +23,8 @@ public class PedidoBuilder {
 		return this;
 	}
 	
-	public PedidoBuilder setPizza(String tamanho, int quantidade, Double valor, String sabor, boolean borda) {
-		this.pedido.addPedido(new Pizza(tamanho, quantidade, valor, sabor, borda));
+	public PedidoBuilder setPizza(String tamanho, int quantidade, Double valor, String sabor, String borda) {
+		this.pedido.addpizza(new Pizza(tamanho, quantidade, valor, sabor, borda));
 		return this;
 	}
 	
