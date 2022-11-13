@@ -14,12 +14,12 @@ public class Pedido {
 		pizzas = new ArrayList<Pizza>();
 	}
 	
-	public float getValorTotal() {
-		float total = 0;
+	public double getValorTotal() {
+		double total = 0;
 		for (Pizza pizza : pizzas) {
-			float qtde = pizza.getQuantidade();
-			float valor = pizza.getValor();
-			float vTotal = valor * qtde;
+			double qtde = pizza.getQuantidade();
+			double valor = pizza.getValor();
+			double vTotal = valor * qtde;
 			total = vTotal;
 		}
 		return total;
@@ -54,11 +54,11 @@ public class Pedido {
 	}
 
 
-	public List<Pizza> getpizzas() {
+	public List<Pizza> getPizzas() {
 		return pizzas;
 	}
 
-	public void setpizzas(List<Pizza> pizzas) {
+	public void setPizzas(List<Pizza> pizzas) {
 		this.pizzas = pizzas;
 	}
 	

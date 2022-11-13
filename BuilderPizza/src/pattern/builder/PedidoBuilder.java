@@ -24,8 +24,8 @@ public class PedidoBuilder {
 		return this;
 	}
 	
-	public PedidoBuilder setProduto(String nome, int quantidade, BigDecimal valor) {
-		this.pedido.addProduto(new Pizza(nome, quantidade, valor));
+	public PedidoBuilder setPizza(String tamanho, int quantidade, Double valor, String sabor, boolean borda) {
+		this.pedido.addPedido(new Pizza(tamanho, quantidade, valor, sabor, borda));
 		return this;
 	}
 	

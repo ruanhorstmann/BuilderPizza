@@ -14,8 +14,7 @@ public class VendaApp {
 		Pedido pedido = new PedidoBuilder()
 				.setNumero("1234567890")
 				.setCliente(100, "Ricardo", "99988-0000")
-				.setProduto("Notebook", 1, new BigDecimal(8000.00))
-				.setProduto("iPhone", 2, new BigDecimal(5000.00))
+				.setPizzas("M", 1, "Frango", "N",)
 				.builder();
 
 		System.out.println(pedido);

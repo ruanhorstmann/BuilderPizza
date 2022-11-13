@@ -8,25 +8,8 @@ public class Pizza {
 	private String sabor;
 	private boolean borda;
 	private Double valor;
-	
-	public Pizza() {
-	}
 
-	public boolean isBorda() {
-		return borda;
-	}
 
-	public void setBorda(boolean borda) {
-		this.borda = borda;
-	}
-
-	public String getSabor() {
-		return sabor;
-	}
-
-	public void setSabor(String sabor) {
-		this.sabor = sabor;
-	}
 
 	public Pizza(String tamanho, int quantidade, Double valor, String sabor, boolean borda) {
 		super();
@@ -69,6 +52,21 @@ public class Pizza {
 		   this.valor = valor * 1.1;
 	   }
 
+	}
+	public boolean isBorda() {
+		return borda;
+	}
+
+	public void setBorda(boolean borda) {
+		this.borda = borda;
+	}
+
+	public String getSabor() {
+		return sabor;
+	}
+
+	public void setSabor(String sabor) {
+		this.sabor = sabor;
 	}
 	
 	@Override
