@@ -37,22 +37,20 @@ public class Pizza {
 	}
 
 	public Double getValor() {
-		return valor;
+		
+		if(tamanho == "p"|| tamanho == "P"){
+			valor = valor * 0.8;
+	   }
+	   else if (tamanho == "m" || tamanho == "M"){
+		   
+	   }
+	   else if (tamanho == "g" || tamanho == "G"){
+		   valor = valor * 1.3;
+	   }
+	   return valor;
 	
 	}
 
-	public void setValor(Double valor) {
-		if(tamanho == "p"|| tamanho == "P"){
-			this.valor = valor * 0.9;
-	   }
-	   else if (tamanho == "m" || tamanho == "M"){
-		   this.valor = valor;
-	   }
-	   else if (tamanho == "g" || tamanho == "G"){
-		   this.valor = valor * 1.1;
-	   }
-
-	}
 	public String isBorda() {
 		return borda;
 	}

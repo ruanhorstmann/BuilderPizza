@@ -12,8 +12,8 @@ public class VendaApp {
 		
 		Pedido pedido = new PedidoBuilder()
 				.setNumero("1234567890")
-				.setCliente(100, "Ricardo", "99988-0000")
-				.setPizza("M", 1, 10.0,"Frango", "N")
+				.setCliente(1002004501, "Jonatan", "99988-0000")
+				.setPizza("G", 1, 35.0,"Frango", "N")
 				.builder();
 
 		System.out.println(pedido);

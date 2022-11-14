@@ -18,8 +18,8 @@ public class PedidoBuilder {
 		return this;
 	}
 	
-	public PedidoBuilder setCliente(int codigo, String nome, String telefone) {
-		this.pedido.setCliente(new Cliente(codigo, nome, telefone));
+	public PedidoBuilder setCliente(int cpf, String nome, String telefone) {
+		this.pedido.setCliente(new Cliente(cpf, nome, telefone));
 		return this;
 	}
 	
